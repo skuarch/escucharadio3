@@ -1,0 +1,349 @@
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0 0 0 0;
+    font-family: Verdana,Arial,Helvetica,sans-serif;            
+    font-size: 12px;
+}
+img{
+    border:0px;
+}
+._1{  
+    width: 1045px;
+    margin:auto;
+}
+._3{
+    border-bottom: solid 1px #86c400;    
+}
+._4{    
+    height: 265px;    
+    padding-top:65px;    
+}
+._5{
+    height: 250px;
+    width: 300px;    
+    float: left;
+    margin-right: 10px;    
+    background: #fff url('../images/escucharadio3.png') no-repeat 60px 90px;    
+}
+._6{
+    height: 250px;
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+    background: #fff url('../images/escucharadio3.png') no-repeat 60px 90px;    
+}
+._7{
+    height: 250px;
+    width: 425px;
+    float: left;
+}
+._8{
+    padding-top:10px;
+}
+._12{    
+    height: 375px;
+    overflow: auto; 
+}
+._13{
+    float:right;
+    text-align: center;
+}
+/*----------------------------------------------------------------------------*/
+._14{
+    padding-top: 8px;
+    width: 348px;/*tam total*/
+    float:left;
+}
+._15{
+    text-align: center;
+    float:left;    
+    background-color: #fff;
+    padding-top: 8px;
+    height: 45px;
+    color: #6E6E6E;
+    width: 316px;
+    font-size: 10px;
+    border:1px #c0c0c0 solid;
+}
+
+._15:hover{
+    background-color: #EBFFFF;
+}
+
+._15 span{
+    color:#000;
+    text-decoration: none;
+    font-weight: normal;
+}
+._16{
+    background: #143D6C url('../images/play.png') no-repeat 0px 16px;    
+    height: 55px;
+    width: 25px;
+    float:right;    
+    margin-right: 5px;
+}
+._17{    
+    font-size: 12px;
+    color:#143D6C;
+}
+/*----------------------------------------------------------------------------*/
+._18{
+    height: 375px;
+    margin: auto;
+    width: 1045px;
+}
+._19{
+    text-align: center;
+    padding-top: 170px;
+}
+._20{
+    height:50px;
+    text-align: right;
+}
+._21{
+    font-weight: bold;
+}
+/*._22{
+    width: 200px;
+    margin-left: 210px;
+}*/
+._23{
+    height: 250px;
+    width: 340px;    
+    float: left;
+    margin-right: 10px;
+}
+._24{
+    height: 250px;
+    width: 340px;
+    float: left;
+    margin-left: 10px;
+}
+._25{
+    height: 250px;
+    width: 340px;
+    float: left;
+}
+._26{
+    text-align:center;
+    word-spacing: 5px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color:#21608a;
+    font-size: 14px;
+}
+._27{
+    height: 285px;    
+    padding-top:30px;   
+}
+._27 a{
+    color:#000;
+}
+._27 a:hover{
+    color:#226F6F;
+    text-decoration: underline;
+}
+._28{
+    overflow: auto; 
+    height: 137px; 
+    width: 423px; 
+    margin-top: 5px; 
+    border: 1px solid #21608a; 
+    text-align: center;
+    background-color: #fff;
+}
+._29{
+    font-size: 9px; 
+    font-weight: bold; 
+    text-align: center; 
+    padding-bottom: 5px; 
+    background-color: #ccc; 
+    color:#fff
+}
+._30{
+    width: 100%; 
+}
+/*----------------------------------------------------------------------------*/
+._31{
+    padding-top: 8px;
+    width: 342px;/*tam total*/
+    float:left;
+}
+._32{
+    text-align: center;
+    float:left;
+    /*background-color: #EBEBEB;*/
+    background-color: #fff;
+    padding-top: 8px;
+    height: 47px;
+    color: #6E6E6E;
+    width: 290px;
+    font-size: 10px;
+}
+._32 span{
+    color:#000;
+    text-decoration: none;
+    font-weight: normal;
+}
+._33{    
+    background: #000 url('../images/play.png') no-repeat 0px 16px;
+    height: 55px;
+    width: 25px;
+    float:right;    
+    margin-right: 2px;
+}
+._34{    
+    font-size: 12px;
+    color:#143D6C;
+}
+._35{
+    background: #F2F2F2 url('../images/delete.png') no-repeat 5px 20px;    
+    float:left;
+    width: 25px;
+    height: 55px;
+}
+/*----------------------------------------------------------------------------*/
+#_36{
+    margin:auto;
+    font-size: 14px;
+    font-weight: bold;
+}
+#_36 td{
+    padding: 12px;
+    /*border:1px solid #000;*/
+}
+#_36 a:link{
+    color:#000;
+}
+
+#_36 a:hover{
+    text-decoration: underline;
+    color:#ccc;
+}
+
+._37{/*14*/
+    padding-top: 8px;
+    width: 342px;/*tam total*/
+    float:left;
+}
+._38{/*15*/
+    text-align: center;
+    float:left;
+    /*background-color: #EBEBEB;*/
+    background-color: #fff;
+    padding-top: 8px;
+    height: 45px;
+    color: #6E6E6E;
+    width: 313px;
+    font-size: 10px;   
+    border:1px #c0c0c0 solid;
+}
+
+._38:hover{
+ background-color: #EBFFFF;
+}
+._38 span{
+    color:#000;
+    text-decoration: none;
+    font-weight: normal;
+}
+._39{/*16*/
+    background: #143D6C url('../images/play.png') no-repeat 0px 16px;    
+    height: 55px;
+    width: 25px;
+    float:right;    
+    margin-right: 2px;
+}
+._40{/*17*/    
+    font-size: 13px;
+    font-weight: bold;
+    color:#143D6C;
+}
+._41 {
+    background-color:#378de5;
+    border:1px solid #1c3e94;
+    color:#ffffff;
+    height:42px;
+    font-size:17px;
+    font-weight:bold;
+    padding:7px 34px;
+    text-decoration:none;
+    float:left;
+}
+._41:hover {
+    background-color:#eeeeff;
+    color:#6a6a6a;
+    border:1px solid #ccc;
+    cursor: pointer;
+}._41:active {
+}
+._42{/*button*/
+    outline-color: transparent; 
+    /*background: #fff url('../images/search_1.png') no-repeat 5px 10px;     */
+    height: 38px; 
+    width: 300px;
+    border:1px solid #000;
+}
+._43 table { 
+    margin:auto;
+    width: 300px;
+}
+._44{
+    width: 900px;
+    margin:auto;
+    text-align: justify;
+}
+._45{
+    text-align: center;
+    padding-top: 10px;
+}
+._46{
+    width:100%; 
+    z-index: 100; 
+    margin: 0px; 
+    position: fixed; 
+    height: 50px; 
+    background-color: #000;
+    font-size: 13px;    
+}
+._47{
+    width: 1045px; 
+    margin:auto;  
+    color: #fff;
+}
+._48{
+    margin-top:8px;
+}
+._50{
+    height: 32px; 
+    background-color: #424242; 
+    float: right; 
+    padding-top:18px; 
+    /*padding-left: 15px;*/
+    width: 100px;
+    text-align: center;
+}
+._50:hover{
+    background-color: #4e4e4e; 
+    border-bottom: 2px #00bcba solid;
+}
+._47 a:link {
+    color:#fff;
+}
+._47 a:visited{
+    color:#fff;
+}
+._47 a:active{
+    color:#fff;
+}
+._47 a:hover{
+    color:#00bcba;
+}
+
+._51{
+    width: 100%; 
+    background-color: #f9f9f9;
+}
