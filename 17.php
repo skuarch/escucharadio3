@@ -1,7 +1,7 @@
 <?php
     require_once "EscucharadioConnection.php";
     $connection = new EscuchaRadioConnection();
-    $sql = "SELECT COUNT(*)quantity, genre_name, station_id, station_type FROM stations LEFT JOIN genre ON (station_genre = genre_id) WHERE (station_active = 1) GROUP BY genre_name ORDER BY genre_name ASC;";
+    $sql = "SELECT COUNT(*)quantity, genre_name, station_id, station_type, genre_id FROM stations LEFT JOIN genre ON (station_genre = genre_id) WHERE (station_active = 1) GROUP BY genre_name ORDER BY genre_name ASC;";
     $result = $connection->executeQuery($sql);
     $i = 0;
 
@@ -13,7 +13,7 @@
     foreach ($result as $rs) {        
 ?> 
         <div class="_37">
-            <a href="javascript:launcher('<?php echo $rs['station_id'] ?>','<?php echo $rs['station_url'] ?>','<?php echo $rs['station_name'] ?>',<?php echo $rs['station_type']?>);">
+            <a href="javascript:selectGenre(<?php echo $rs['genre_id'] ?>);">
                 <div class="_38">
                     <div class="_40"><?php echo $rs['genre_name'] ?></div>        
                     <br/>

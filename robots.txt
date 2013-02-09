@@ -1,2 +1,2 @@
 User-agent:*
-Disallow: addStation.php
+Disallow: 18.php

@@ -477,6 +477,8 @@ function ajaxCountries(){
         success: function(data) {   
             $('#12').hide();
             $('#12').html(data);
+            $("._38").corner("left 5px");
+            $("._39").corner("right 5px");            
             $('#12').slideDown();
         },
         error: function(error){
@@ -582,4 +584,86 @@ function ajaxGet(url, identifier){
     });
 }
 
+//==============================================================================
+function addStation(){
+    
+    var error = "";
+    var nombreEstacion = document.form1.nombreEstacion.value;
+    var urlStreaming = document.form1.urlStreaming.value;
+    var genero = document.form1.genero.value;
+    var frecuencia = document.form1.frecuencia.value;
+    var descripcion = document.form1.descripcion.value;
+    var estado = document.form1.estado.value;
+    var pais = document.form1.pais.value;
+    var lenguaje = document.form1.lenguaje.value;
+    var tipo = document.form1.tipo.value;
+    var sitioWeb = document.form1.sitioWeb.value;    
+    
+    if(nombreEstacion == "" || nombreEstacion == undefined){
+        error += "-Falta el nombre de la estacion\n";
+        $("#errorNombreEstacion").html("-Falta el nombre de la estacion\n");
+    }
+    
+    if(urlStreaming == "" || urlStreaming == undefined){
+        error += "-Falta la url de streaming";
+        $("#errorUrlStreaming").html("-Falta la url de streaming");
+    }    
+    
+    if(error.length > 0){
+        alert("Error: \n\n" + error);
+    }else{ 
+        $.ajax({
+            type: 'post',
+            url: '19.php',
+            data: {
+                nombreEstacion : nombreEstacion,
+                urlStreaming: urlStreaming,
+                genero: genero,
+                frecuencia:frecuencia,
+                descripcion:descripcion,
+                estado:estado,
+                pais:pais,
+                lenguaje:lenguaje,
+                tipo:tipo,
+                sitioWeb:sitioWeb
+            },
+            cache:'false',
+            success: function(data) {
+                alert(data);
+            //alert("la estacion se guardo correctamente \n\nGRACIAS");
+            },
+            error: function(error){
+                alert("error "+ error);
+            }
+        });
+    }
+    
+} // end addStation
 
+
+//==========================================================================
+function selectGenre(genreId){
+        
+    $('#12').html(loader);    
+    
+    $.ajax({
+        type:'post',
+        url: '21.php',
+        data: {
+            genreId:genreId,
+            param:Math.random()
+        },
+        cache:false,
+        success: function(data){            
+            $("#12").hide();
+            $("#12").html(data);
+            $("._38").corner("left 5px");
+            $("._39").corner("right 5px");            
+            $("#12").slideDown("slow");
+        },
+        error: function(){
+        //alert("A ocurrido un error inexperado,\nestamos trabajando en solucionarlo");
+        }
+    });
+        
+} // end selectGenre

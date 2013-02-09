@@ -1,3 +1,4 @@
+<?php header('Content-type: text/html; charset=UTF-8'); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,9 +29,7 @@
         <title>escuchar radio por internet gratis | radio en vivo</title>
 
     </head>
-    <body oncontextmenu="return false;"> 
-
-        <div id="zero"></div>
+    <body oncontextmenu="return false;">        
 
         <div class="_46">
 
