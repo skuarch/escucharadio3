@@ -18,7 +18,8 @@
     $i=0;    
     $connection = new EscuchaRadioConnection();
     $connection->executeUpdated(utf8_decode(utf8_encode("insert into searches (search_text) values ('".$search."')")));
-    $sql = "SELECT  station_id, station_name, station_url, station_language, station_active, station_type FROM stations LEFT JOIN complement ON(stations.station_id = complement.complement_station_id) WHERE (station_active = 1) AND (complement_text LIKE '%".$search."%');";    
+    //$sql = "SELECT  station_id, station_name, station_url, station_language, station_active, station_type FROM stations LEFT JOIN complement ON(stations.station_id = complement.complement_station_id) WHERE (station_active = 1) AND (complement_text LIKE '%".$search."%');";        
+    $sql = "SELECT * FROM stations, complement WHERE (complement_text LIKE '%".$search."%') AND (station_id = complement_station_id) AND (station_active = 1);";
     $result = $connection->executeQuery($sql);
     
     if ($result == NULL || empty($result)) {        

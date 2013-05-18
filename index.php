@@ -1,4 +1,8 @@
-<?php header('Content-type: text/html; charset=UTF-8'); ?>
+<?php 
+header('Content-type: text/html; charset=UTF-8'); 
+header('P3P:CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"');
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,12 +10,15 @@
         <?php require_once 'metas.php' ?>
 
         <link rel="stylesheet" href="css/default.css" type="text/css" />
-        <link rel="stylesheet" href="css/blue.monday/jplayer.blue.monday.compress.css" type="text/css"/>
+        <link rel="stylesheet" href="css/blue.monday/jplayer.blue.monday.compress.css" type="text/css"/>        
+        <link rel="stylesheet" href="css/alertify.core.css" type="text/css"/>        
+        <link rel="stylesheet" href="css/alertify.default.css" type="text/css"/>        
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
         <link rel="image_src" href="images/escucharadio.png"/>
         <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
-        <script src="js/jquery.jplayer.min-2.1.0.js" type="text/javascript"></script>
-        <script src="js/jquery.corner-2.12.js" type="text/javascript"></script>        
+        <script src="js/jquery.jplayer.min-2.3.0.js" type="text/javascript"></script>
+        <script src="js/jquery.corner-2.12.js" type="text/javascript"></script>      
+        <script src="js/alertify.min.js" type="text/javascript"></script>      
         <script src="js/functions.js" type="text/javascript"></script>                
 
         <script type="text/javascript">
@@ -20,9 +27,12 @@
             _gaq.push(['_trackPageview']);
 
             (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
             })();
         </script>
 
@@ -81,8 +91,8 @@
                     </script>
                 </div>
                 <div class="_7">
-                    <?php require_once 'player.php'; ?>
-                    <?php require_once '6.php'; ?>
+<?php require_once 'player.php'; ?>
+<?php require_once '6.php'; ?>
                 </div>
                 <div class="_6">
                     <script type="text/javascript"><!--
@@ -134,7 +144,7 @@
             <div class="_3"></div> <!-- line -->
 
             <div class="_20">
-                <br/>todos los derechos reservados de autor skuarch | las estaciones son de sus autores | <a href="14.php">terminos legales</a>
+                <br/>todos los derechos reservados de autor skuarch | las estaciones son de sus autores | <a href="14.php">terminos legales</a> radio en vivo gratis
             </div>
 
         </div> <!-- /1 -->
